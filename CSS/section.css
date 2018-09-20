@@ -1,0 +1,25 @@
+.row__section--sections{
+    display:grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,2fr);
+}
+.row--sections{
+    grid-column: 1/ span4;
+}
+.row--sections p{
+    color: rgba(0, 0, 0, 0.685);
+}
+.sections--button{
+    background-color:rgb(0, 120, 215);
+    color: white;
+    border: 0;
+    padding: 20%;
+}
+.sections--button:hover{
+    background-color: #003477;
+    cursor: pointer;
+}
+.row__section--sections h3{
+    color: white;
+}

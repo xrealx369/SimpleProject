@@ -1,0 +1,21 @@
+.row__section--card{
+    display:grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(4, 2fr);
+}
+.row--card{
+    background-color:  rgb(255, 254, 254);
+    border-radius: 75px;
+    text-align: center;
+    padding: 1em;
+}
+.row--card:hover{
+    box-shadow: 2px 2px 3px 2px rgb(172, 172, 172);
+}
+.card--img{
+    border-radius: 500px;
+    width: 75%;
+}
+.row--card a{
+    color: rgba(0, 0, 0, 0.685);
+}

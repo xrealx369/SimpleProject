@@ -1,0 +1,105 @@
+    body{
+        background-color: rgb(228, 228, 228);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;        
+    }
+    .row{
+        width:"100%";
+        margin: 15px;
+        text-align: center;
+        background-color: rgb(0, 120, 215);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .nav{
+        width:"100%";
+        margin: 15px;
+        text-align: center;
+        background-color: rgb(0, 120, 215);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .row__section{
+        width:"100%";
+        margin:15px;
+        text-align: center;
+        size: 300px;
+    }
+    .img--logo{
+        -webkit-transition: all 0.5s ease-in-out;
+        margin-bottom: -15px;
+    }
+    .img--logo:hover{
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    .column{
+        width: 100px;
+        display: inline-block;
+        grid-column: 3;
+        padding: 1em;
+    }
+    .column-hamburger{
+        width: 100px;
+        display: none;
+        color:white;
+        grid-column: 3;
+        padding: 1em;
+    }
+    .center {
+        display: block;
+        width:70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p{
+        color: aliceblue;
+        font-size: 16px;
+    }
+    h1{
+        color: rgba(0, 0, 0, 0.685);
+        margin: 15px;
+        text-align: center;        
+    }
+    h2{
+        color: rgba(0, 0, 0, 0.685);
+        margin: 15px;
+        text-align: center;
+    }
+    h3{
+        color: rgba(0, 0, 0, 0.685);
+        margin: 15px;
+        text-align: center;
+    }
+    img{
+        margin: 15px;
+    }
+    hr{
+        width: 75%;
+        color: rgba(0, 0, 0, 0.685);
+    }
+    a{
+        display: inline;
+        color: white;
+        margin: auto;
+    }
+    @media (max-width:1100px){
+        body{
+            width: 800px;
+        }
+        .center{
+            margin-left: 0%;
+        }
+    }
+    @media (max-width:640px){
+        body{
+            width: 500px;
+        }
+        .column-hamburger{
+            display: block;
+        }
+        .nav .column{
+            display: none;
+        }
+
+    }

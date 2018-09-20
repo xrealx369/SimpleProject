@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Simple Project</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/Styles.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/overlap_images.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/dropdown_list.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/custom_modal.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/calculator.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/card.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/section.css">
+
+    </head>
+
+    <body>
+
+        <header>
+            <div style="left:0%;">
+                <img class="img--logo" src="../Media/Logo.png" alt="Logo" >
+            </div>
+        </header>
+
+        <div name="Content_Wrapper">
+          <nav>            
+            <div name="Nav_Bar" class="nav">
+                <ul>
+                    <li class="column-hamburger">
+                        <div class="dropdown">
+                            <button class="dropbtn">&#9776</button>
+                            <div class="dropdown-content">
+                                    <a href="#">Item 1</a>
+                                    <a href="#">Item 2</a>
+                                    <a href="#">Item 3</a>
+                                    <a href="#">Item 4</a>
+                                </div>
+                        </div>                        
+                    </li>
+                    <li class="column">                        
+                            <div class="dropdown">
+                                <button class="dropbtn">Item 1</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>                        
+                    </li>
+                    <li class="column">                        
+                            <div class="dropdown">
+                                <button class="dropbtn">Item 2</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>                        
+                    </li>
+                    <li class="column">                        
+                            <div class="dropdown">
+                                <button class="dropbtn">Item 3</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>                        
+                    </li>
+                    <li class="column">                        
+                            <div class="dropdown">
+                                <button class="dropbtn">Item 4</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>                        
+                    </li>
+                </ul>                
+            </div>
+        </nav> 
+
+            <div id="Center_Image">
+                 <img src="../Media/Center.jpg" alt="Center" class="center" style="border-radius: 1000px;">
+            </div>            
+            <br/>
+
+            <h1>S E C T I O N S</h1>
+            <div class="row__section--sections">
+                <button id="btn_1" value="Section1" class="sections--button" onclick=doChangeSection(1);><h3>Section 1</h3></button>
+                <button id="btn_2" value="Section2" class="sections--button" onclick=doChangeSection(2);><h3>Section 2</h3></button>
+                <button id="btn_3" value="Section3" class="sections--button" onclick=doChangeSection(3);><h3>Section 3</h3></button>
+
+                <div class="row--sections"> 
+                    <h1 id="1" class="selected" style="display:block">1</h1>
+                    <h1 id="2" class="selected" style="display:none;">2</h1>
+                    <h1 id="3" class="selected" style="display:none;">3</h1>
+                </div>
+            </div>
+
+            <div class="row__section--images">
+                    <img class="grid__merge--image1" src="../Media/part0.jpg" alt="part0"/>
+                    <img class="grid__merge--image2" src="../Media/part1.jpg" alt="part1"/>
+                    <img class="grid__merge--image3" src="../Media/part2.jpg" alt="part2"/>
+            </div>
+            <h1>P R O D U C T S</h1>
+            <div class="row__section--card" >
+                <div class="row--card" >
+                    <img  class="card--img" src="../Media/card1.png">
+                    <h2>One Drive</h2>
+                    <hr>
+                    <h3>Save your files and photos to OneDrive and get them from any device, anywhere.</h3>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="row--card" >
+                    <img  class="card--img" src="../Media/card2.png">
+                    <h2>Skype</h2>
+                    <hr>
+                    <h3>Skype makes it easy to stay in touch. Talk. Chat. Collaborate. Get Skype</h3>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="row--card" >
+                    <img  class="card--img" src="../Media/card3.png">
+                    <h2>PCs and Tablets</h2>
+                    <hr>
+                    <h3>Getting back to the books is a lot more fun with a new PC. Whatever your style or budget—Windows 10 PCs do more. Just like you.</h3>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="row--card" >
+                    <img  class="card--img" src="../Media/card4.jpg">
+                    <h2>Gaming</h2>
+                    <hr>
+                    <h3>Enjoy top quality gaming on Xbox One and PC</h3>
+                    <a href="#">Learn More</a>
+                </div>                
+            </div>
+
+            <h1>C A L C U L A T O R</h1>
+            <div class="row__section--calc">
+                <div name="AddSub" class="row__calc">                
+                <div class="row__section">
+                    <div class="column">
+                        <button id="btn_plus" class="button__calc" value="plus" onclick="doAddSubtract('add')"><p>+</p></button>
+                    </div>
+                    <div class="column">
+                        <button id="btn_minus" class="button__calc" value="minus" onclick="doAddSubtract('sub')"><p>-</p></button>
+                     </div>
+                </div>
+                <div class="row__section">
+                    <div id="block>">
+                        <h1 id="counter">0</h1>
+                    </div>
+                </div>                
+                </div>
+                <div class="row__calc">
+                    <div class="row__section">
+                         <input id="input_x" type="text" class="input__calc" value="X" onfocus="this.value=''">
+                        <input id="input_y" type="text" class="input__calc" value="Y" onfocus="this.value=''">
+                        <select id="operators" class="select__calc" >
+                            <option value="0">Select Operator</option>
+                            <option value="1">Add</option>
+                            <option value="2">Subtract</option>
+                            <option value="3">Multiply</option>
+                            <option value="4">Divide</option>
+                        </select>
+                    </div>
+                    <div class="row__section">
+                        <input class="button__calc" type="button" value="Calculate" onclick="doCalculate();">
+                    </div>
+                    <div class="row__section">
+                        <h1 style="display:inline">Result : </h1>
+                        <h1 id="result" style="display:inline">0</h1>
+                    </div>
+                   
+                </div>
+            </div>
+            
+            <br/>
+
+            <div name="PopUp" class="row__section">
+                <button id="modalBtn" class="modal__button"  ><p>Custom Alert</p></button>
+                    <div id="simpleModal" class="modal">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="closeBtn" >&times;</span>
+                            <h2>Modal Header</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Hello</p>
+                        </div>
+                        <div class="modal-footer">
+                            <h2>Modal Footer</h2>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+            
+            <br/>
+        </div>
+
+        <footer>
+
+            <div class="row">                    
+                <div class="column">
+                    <a href="javascript:void(0)">About</a>
+                </div>
+                <div class="column">
+                <a href="javascript:void(0)">Careers</a>
+                </div>
+                <div class="column">
+                   <a href="javascript:void(0)">Contact Us</a>
+                </div>
+                <div class="column">
+                    <a href="javascript:void(0)">Help</a>
+                </div>
+            </div>
+
+        </footer>
+        
+        <script src="../JS/script.js"></script>
+
+    </body>
+
+    
+</html>

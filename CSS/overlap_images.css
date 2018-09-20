@@ -1,0 +1,27 @@
+.row__section--images{
+    display:grid;
+    grid-template-columns: repeat(9 , 1fr);
+    grid-template-rows: repeat(10 , 20px);
+    align-items: center;
+}
+.grid__merge--image1{
+    max-width: 30%;
+    grid-row: 3/ span 6;
+    grid-column: 3/span 5;
+
+}
+.grid__merge--image1:hover{z-index: 2; cursor: pointer;}
+
+.grid__merge--image2{
+    max-width: 35%;
+    grid-row:  2/ span 7;
+    grid-column: 4/ span 7;
+}
+.grid__merge--image2:hover{z-index: 2; cursor: pointer;}
+
+.grid__merge--image3{
+    max-width: 50%;
+    grid-row:  1/ span 8;
+    grid-column: 5 / span 9;
+}
+.grid__merge--image3:hover{ cursor: pointer; }
